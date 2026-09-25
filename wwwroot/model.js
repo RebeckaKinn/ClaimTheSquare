@@ -3,8 +3,14 @@
         display: document.getElementById("app"),
     },
     viewState: {
-
+        claimSquare: {
+            text: "",
+            color: "",
+        },
     },
+    data: {
+        squares: []
+    }
 }
 
 

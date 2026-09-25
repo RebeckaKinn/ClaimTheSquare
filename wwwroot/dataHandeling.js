@@ -1,5 +1,5 @@
 ﻿getData();
 async function getData() {
-    const response = await axios.get('/noe');
-    model.app.display.innerText = response.data;
+    const response = await axios.get('/getSquares');
+    model.data.squares = response.data;
 }

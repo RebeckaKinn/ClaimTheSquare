@@ -9,9 +9,29 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-app.MapGet("/noe", () =>
+app.MapGet("/getSquares", () =>
 {
-    return "noe";
+    return new[]
+   {
+        new
+        {
+            text = "Text 1",
+            color = "blue",
+            index = 0,
+        },
+        new
+        {
+            text = "Text 2",
+            color = "red",
+            index = 3,
+        },
+        new
+        {
+            text = "Text 3",
+            color = "green",
+            index = 10,
+        }
+    };
 });
 
 app.Run();
