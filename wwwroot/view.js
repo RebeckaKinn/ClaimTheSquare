@@ -1,4 +1,5 @@
-﻿updateView();
+﻿
+init();
 function updateView() {
     model.app.display.innerHTML = generateSquares();
 }
@@ -14,4 +15,9 @@ function generateSquares() {
         }
     }
     return html;
+}
+
+async function init() {
+    await getData();
+    updateView();
 }
