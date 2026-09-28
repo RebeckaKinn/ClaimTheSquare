@@ -16,19 +16,22 @@ app.MapGet("/getSquares", () =>
         new
         {
             text = "Text 1",
-            color = "blue",
+            backColor = "blue",
+            foreColor = "white",
             index = 0,
         },
         new
         {
             text = "Text 2",
-            color = "red",
+            backColor = "red",
+            foreColor = "white",
             index = 3,
         },
         new
         {
             text = "Text 3",
-            color = "green",
+            backColor = "green",
+            foreColor = "white",
             index = 10,
         }
     };
